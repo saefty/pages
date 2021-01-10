@@ -1,3 +1,5 @@
+import { jsx } from 'theme-ui'
+
 export const HeadPost = ({ meta, isBlogPost }) => (
 	<>
 	  <h1 className={isBlogPost? 'great-title' :null} >{meta.title}</h1>

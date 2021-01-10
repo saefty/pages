@@ -1,12 +1,9 @@
-import { Post } from "../components/Post";
-import { posts } from "../getAllPosts";
+import { HomePageComponent } from "../components/HomePage/HomePage";
 
-export default function IndexPage() {
-  return (
-    <>
-      {posts.map((post) => (
-        <Post key={post.link} post={post} />
-      ))}
-    </>
-  );
+import { HomePage } from '../components/HomePage/HomePage'
+import { PageConfig } from '../config'
+export default function Home() {
+    return (
+		<HomePage {...PageConfig.homePage}/>
+    );
 }

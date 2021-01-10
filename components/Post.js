@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HeadPost } from "./HeadPost";
+import { jsx } from 'theme-ui'
 
 export const Post = ({ post }) => {
   const {

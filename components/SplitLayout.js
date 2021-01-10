@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
-
+import { jsx } from 'theme-ui'
 export default function Layout({ children, pageTitle, description }) {
   return (
     <>
@@ -11,23 +11,11 @@ export default function Layout({ children, pageTitle, description }) {
         <title>{pageTitle}</title>
       </Head>
       <style jsx global>{`
-				@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap|Roboto:wght@400;700&display=swap");
-				html,
-				body,
-				main,
-				body > div:first-child,
-				div#__next,
-				div#__next > div,
-				div#__next > div > div {
-					height: 100%;
-				}
+        @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap|Roboto:wght@400;700&display=swap");
         html,
         body {
           margin: 0;
           padding: 0;
-          font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-						sans-serif;
           font-size: 1rem;
         }
         h1,
@@ -43,14 +31,14 @@ export default function Layout({ children, pageTitle, description }) {
         }
         a {
           color: #fff;
-				}
+        }
         .content {
-					width: 100%;
-					height: 100%;
-					overflow-x: hidden;
+          max-width: 600px;
+          margin: 2rem auto;
+          padding: 0 1rem;
         }
       `}</style>
-			<main>
+      <main>
         <Header />
         <div className="content">{children}</div>
       </main>
