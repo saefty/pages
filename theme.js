@@ -20,17 +20,24 @@ export const theme = {
 	  heading: 1.4,
 	},
 	colors: {
-	  text: '#121619',
-	  background: '#fff',
-	  primary: '#006C67',
-	  secondary: '#BA1F33',
-	  muted: '#F3A712',
-	  snow: '#FFFBFF'
+	  text: '#000',
+	  background: '#eaeaea',
+	  primary: '#000000',
+	  secondary: '#14213d',
+	  muted: '#fca311',
+	  snow: '#e5e5e5'
 	},
 	layout: {
 		nav: {
 			position: 'sticky',
 			backgroundColor: 'primary',
+			textDecoration: 'none',
+		},
+		headPost: {
+
+		},
+		blogPost: {
+			//marginLeft: '2%'
 		},
 		split: {
 			height: '100%',
@@ -52,7 +59,7 @@ export const theme = {
 		fontFamily: 'heading',
 		lineHeight: 'heading',
 		fontWeight: 'heading',
-	  },
+	  }
 	},
 	styles: {
 	  root: {
@@ -90,6 +97,9 @@ export const theme = {
 		code: {
 		  color: 'inherit',
 		},
+	  },
+	  a: {
+		  color: 'muted'
 	  },
 	  code: {
 		fontFamily: 'monospace',

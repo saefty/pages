@@ -1,7 +1,10 @@
+/** @jsxImportSource  theme-ui */
 import { jsx } from 'theme-ui'
 
 export const HeadPost = ({ meta, isBlogPost }) => (
-	<>
+	<div sx={{
+		variant: 'layout.headPost'
+	}}>
 	  <h1 className={isBlogPost? 'great-title' :null} >{meta.title}</h1>
 	  <div className='details'>
 	  {
@@ -9,7 +12,7 @@ export const HeadPost = ({ meta, isBlogPost }) => (
 	  }
 		<span>{meta.date}</span>
 		<span role='img' aria-label='one coffee'>
-		  ☕ {meta.readTime + ' min read'}
+		  ☕
 		</span>
 	  </div>
 	  <style jsx>
@@ -31,5 +34,5 @@ export const HeadPost = ({ meta, isBlogPost }) => (
 		  }
 		`}
 	  </style>
-	</>
+	</div>
   )

@@ -11,7 +11,7 @@ export const Post = ({ post }) => {
   return (
     <article>
       <HeadPost meta={meta} />
-      <Link href={"/blog" + link}>
+      <Link href={link}>
         <a>Read more &rarr;</a>
       </Link>
       <style jsx>

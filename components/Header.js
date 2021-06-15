@@ -5,13 +5,10 @@ import Link from "next/link";
 export default function Header() {
   return (
     <nav sx={{ variant: 'layout.nav' }}>
-		<h1><Link href="/">Next'Blog</Link></h1>
+		<h1><Link href="/">Saef Taher</Link></h1>
       <div>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
-        <Link href="/about">
-          <a>About</a>
+        <Link href="/cv">
+          <a>curriculum vitae</a>
         </Link>
       </div>
       <style jsx>{`
