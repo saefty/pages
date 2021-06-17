@@ -1,37 +1,45 @@
-import BlogPost from '../../components/BlogPost'
-import {HomePage} from '../../components/CV/HomePage'
-import { PageConfig } from '.../../../config'
+import BlogPost from "../../components/BlogPost";
+import { HomePage, serverSidePropsFactory } from "../../components/CV/HomePage";
+import { PageConfig } from ".../../../config";
 
 export const meta = {
-  title: 'Curiculum Vitea',
-  description: 'Getting started with the Next framework',
-  date: 'Jun 15, 2021',
-}
+  title: "Curiculum Vitea",
+  description: "Getting started with the Next framework",
+  date: "Jun 15, 2021",
+};
 
-export default ({ children }) => <HomePage {...PageConfig.homePage}><BlogPost meta={meta}>{children}</BlogPost></HomePage>;
-
+export default ({ children }) => (
+  <HomePage {...PageConfig.homePage}>
+    <BlogPost meta={meta}>{children}</BlogPost>
+  </HomePage>
+);
 
 # Summary
+
 Passionate and committed engineer using Kotlin and SpringBoot to enable innovation by developing APIs and microservices.
 Mentoring and giving guidance while Innovating continuously with a focus on automation.
 
 Likes Taking Ownership responsibly and follows you Build It / You Run It as a key factory to success.
 
 ## Passionate About
-* Mentoring & Coaching
-* Increasing Product Robustness
-* Scaling high availability systems
-* Delivering Sustainable Customer Value
+
+- Mentoring & Coaching
+- Increasing Product Robustness
+- Scaling high availability systems
+- Delivering Sustainable Customer Value
 
 # Work Experience
 
 ## DKB Codefactory GmbH
 
-Position: Senior Software Engineer
+Position: Senior Software Engineer<br/>
+Project Size: ~300<br/>
+Team Size: ~15<br/>
+Stack: Kotlin, Python, Spring Boot, Postgres, Kubernetes / Helm, Gitlab CI, Ab Initio<br/>
 
 Description:
 Development of greenfield microservices in the "Card" Domain of the Deutsche Kreditbank AG.
-APIs used to delivery realtime data and notifications so various new frontend applications that are currently rolled out continuously to ~4 million customers
+APIs used to delivery realtime data and notifications so various new frontend applications that are currently rolled out continuously to ~4 million customers.
 Connecting many backend systems while abstracting away asynchronus data delivery in the bank to ensure the very best customer experience.
 
 Building and designing automated sofware delivery tools for easening the reporting to in example confluence.
@@ -39,34 +47,82 @@ Creating Tools for automated dependency updates and integrating alerts into MS T
 
 Participating in the technical interview process for hiering new engineers.
 Creating the initative for internal "Tech Talks" as a platform for company wide knowledge sharing.
+Sharing Knowledge about CI/CD with Gitlab CI in self hosted Workshops.
 
-* [Business Insider DKB App](https://www.inside-digital.de/news/dkb-so-sieht-die-neue-banking-app-aus-und-diese-funktionen-bringt-sie-mit)
-* [Offical DKB Beta Program](https://bank.dkb.de/banking-app-beta)
-* [Porsche Card App](https://apps.apple.com/de/app/porsche-card/id1474831604)
-* [Miles&More Card App](https://apps.apple.com/de/app/miles-more-credit-card/id1375967750#?platform=iphone)
-* [New Webbanking (Comming Soon)](https://finanzwissen.dkb.de/)
+Press References:
+
+- [Business Insider DKB App](https://www.inside-digital.de/news/dkb-so-sieht-die-neue-banking-app-aus-und-diese-funktionen-bringt-sie-mit)
+- [Offical DKB Beta Program](https://bank.dkb.de/banking-app-beta)
+- [Porsche Card App](https://apps.apple.com/de/app/porsche-card/id1474831604)
+- [Miles&More Card App](https://apps.apple.com/de/app/miles-more-credit-card/id1375967750#?platform=iphone)
+- [New Webbanking (Comming Soon)](https://finanzwissen.dkb.de/)
 
 ## Nexeon MedSystems Inc.
 
-Position: Working Student
+Position: Working Student<br/>
+Company Size: ~100<br/>
+Team Size: ~5<br/>
+Stack: Swift, Gitlab CI, Scrum<br/>
 
+iOS Development with a high focus on Testing and Mocking a neural implant used for Morbus Parkinson.
+The iOS App being developed was able to program the implant through Bluetooth protocol.
+In the 6 months I did setup migrate from BitBucket to Gitlab CI and did setup a Gitlab CI Host for building the iOS App one a Mac Mini continuously.
+Added mocking and testing capabilites to the application to allow UI Testing seperated from the Bluetooth layer.
+
+The company went bankcrupt due to lacking investments therfore my contract could not be continued.
 
 ## Stellenticket GmbH
 
-Position: Working Student
+Position: Working Student<br/>
+Size: Startup<br/>
+Team Size: ~2<br/>
+Technology: Ruby on Rails, Postgres
 
+Development of an HR Tool for managing Working Hours and Shifts of the startup.
+Allowed to exchange shifts, comment exchanges and administration through impersonating users as an admin.
 
 # References
 
+## Bachelor Thesis: Can Augmented Reality Support agile Software Development?
+
+Research following the question if and how augmented reality can support agile sofware development.
+Used to fix many bugs in the HoloLens SDK in the UI interactions. Lack of maintanance of the SDK due to the ongoing work on the HoloLens 2.
+
+Technology:
+* https://www.colyseus.io/ as a central node js server
+* HoloLens 1 / C# / Unity
+* Utilizing client side prediction to improve the usability of the application.
+* Handling object locks during interactions.
+
 ## Happy 2 Help
+
 Initiated the project happy 2 help with 5 of my former fellow students.
 Coordinating the team and setting up an automated deployment up to "production" including TestFlight and PlayStore
 Happy 2 Help facilitates the communication and organization of volunteer work. Non-profit organizations are given the opportunity to easily publish events and jobs they wish to get help for. Volunteers may apply for these jobs to announce their willingness to help. This makes volunteering more accessible and manageable. Via the application event creators can also confirm a volunteer's participation, who is then granted a certain amount of credit points. With these a user is allowed to create his own events to ask for help for everyday tasks and problems.
 
 ![img](https://raw.githubusercontent.com/saefty/happy2help_app/master/readme_assets/demo.gif)
+
 ## Webpresence
 
-## Monte-Carlo Raytracer
+* Trained myself on web development
+* Used Next.js, React, MDX for Rendering Markdown to HTML
+* Github Actions
+* [Github Repository](https://saefty.github.io/pages/cv)
 
+## Monte Carlo Ray Tracer (Lecture)
 
-# Education
+* Development of a Ray Tracer applying differnt rendering techniques
+* Expanded the final approach with networking
+	* Utilized 16 computers each 4 CPUs in a network to improve super-sampling
+	* Rendered a video in 720p on the CPU over a week
+	* Used dstributed computation over all machines and each CPU
+* [Shortend Video](https://github.com/saefty/monte-carlo-raytracer/blob/master/movie.mp4)
+
+# Graduation
+
+## Bachelor of Science in media informatics
+Place: Beuth University of Applied Sciences, Berlin
+Applied computer sciences with a focus on audio, web and 3D development.
+
+## Allgemein-Hochschulreife / Abitur (~High-School)
+Place: Martin-Buber-Oberschule, Berlin
