@@ -5,7 +5,7 @@ export function Left(props) {
 		<div sx={{
 			variant: 'layout.splitLeft'
 		}}>
-			<img src={props.url} style={{ borderRadius: '50%', width: '400px', margin: '4em auto', display: 'block' }}/>
+			<img src={props.url} style={{ borderRadius: '1%', width: '400px', margin: '4em auto', display: 'block', position: 'sticky', top: '2em' }}/>
 		</div>
 	);
 }
