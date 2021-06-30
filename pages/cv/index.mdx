@@ -1,3 +1,19 @@
+import BlogPost from "../../components/BlogPost";
+import { HomePage, serverSidePropsFactory } from "../../components/CV/HomePage";
+import { PageConfig } from ".../../../config";
+
+export const meta = {
+  title: "Curiculum Vitea",
+  description: "Getting started with the Next framework",
+  date: "Jun 15, 2021",
+};
+
+export default ({ children }) => (
+  <HomePage {...PageConfig.homePage}>
+    <BlogPost meta={meta}>{children}</BlogPost>
+  </HomePage>
+);
+
 # Summary
 
 Passionate and committed engineer using Kotlin and SpringBoot to enable innovation by developing APIs and microservices.
