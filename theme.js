@@ -37,6 +37,7 @@ export const theme = {
 
 		},
 		blogPost: {
+			paddingBottom: '100px'
 			//marginLeft: '2%'
 		},
 		split: {

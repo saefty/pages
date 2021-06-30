@@ -12,7 +12,7 @@ export const HeadPost = ({ meta, isBlogPost }) => (
 	  }
 		<span>{meta.date}</span>
 		<span role='img' aria-label='one coffee'>
-		  ☕
+		  Made with ❤️ in Berlin
 		</span>
 	  </div>
 	  <style jsx>

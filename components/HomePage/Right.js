@@ -13,7 +13,7 @@ export function Right(props) {
 		<div sx={{
 			variant: 'layout.splitRight'
 		}}>
-			<div style={{ margin: '100px 0 0 20px ', maxWidth: '1000px'}}>
+			<div style={{ margin: '100px 0 0 40px ', maxWidth: '1000px'}}>
 				<Heading as='h1'>{props.title}</Heading>
 				<Heading as='h2'>{props.subtitle}</Heading>
 				{description}
